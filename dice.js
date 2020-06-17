@@ -10,3 +10,10 @@ function reset() {
   a = 0;
   document.getElementById("num").innerText = "Number of rolls: " + a;
 }
+var input = document.getElementById("num2");
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+    event.preventDefault();
+    document.getElementById("go").click();
+  }
+});
