@@ -1,6 +1,7 @@
 var a = 0;
 var b, rando;
 var r = 0;
+var bulknum = 0;
 var arr = [];
 function rand() {
   b = document.getElementById("num2").value;
@@ -10,6 +11,7 @@ function rand() {
 }
 function reset() {
   a = 0;
+  bulknum = 0;
   document.getElementById("num").innerText = "Number of rolls: " + a;
   document.getElementById("out2").innerText = ""
 }
@@ -31,4 +33,6 @@ function rand2() {
     r++
   }
   document.getElementById("out2").innerHTML = "Randomly Generated Numbers:<br>" + arr;
+  bulknum = bulknum + document.getElementById("numdice").value;
+  document.getElementById("bulknum").innerText = "Number of rolls: " + bulknum;
 }
