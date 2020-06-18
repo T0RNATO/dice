@@ -22,7 +22,7 @@ input.addEventListener("keyup", function(event) {
 });
 function rand2() {
   document.getElementById("out2").innerText = "";
-  arr = ["Randomly Generated Numbers:<br>"];
+  arr = [];
   r = 0;
   while(r < document.getElementById("numdice").value){
     b = document.getElementById("numsides").value;
@@ -30,5 +30,5 @@ function rand2() {
     arr.push(" " + rando);
     r++
   }
-  document.getElementById("out2").innerHTML = String(arr).replace(',','');
+  document.getElementById("out2").innerHTML = "Randomly Generated Numbers:<br>" + arr;
 }
