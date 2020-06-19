@@ -33,6 +33,6 @@ function rand2() {
     r++
   }
   document.getElementById("out2").innerHTML = "Randomly Generated Numbers:<br>" + arr;
-  bulknum = bulknum + document.getElementById("numdice").value;
+  bulknum = bulknum + Number(document.getElementById("numdice").value);
   document.getElementById("bulknum").innerText = "Number of rolls: " + bulknum;
 }
