@@ -34,9 +34,7 @@ function rand2() {
   }
   document.getElementById("out2").innerHTML = "Randomly Generated Numbers:<br>" + arr;
   bulknum = bulknum + Number(document.getElementById("numdice").value);
-  var sum = arr.reduce(function(a, b){
-        return a + b;
-    }, 0);
+  var sum = arr.reduce(function(a, b){return a - b;}, 0);
   document.getElementById("bulknum").innerText = "Number of rolls: " + bulknum;
   document.getElementById("bulktotal").innerText = "Total: " + sum;
 }
