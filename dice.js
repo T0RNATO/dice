@@ -36,5 +36,5 @@ function rand2() {
   bulknum = bulknum + Number(document.getElementById("numdice").value);
   var sum = arr.reduce(function(a, b){return a - b;}, 0);
   document.getElementById("bulknum").innerText = "Number of rolls: " + bulknum;
-  document.getElementById("bulktotal").innerText = "Total: " + sum;
+  document.getElementById("bulktotal").innerText = "Total: " + Math.abs(sum);
 }
